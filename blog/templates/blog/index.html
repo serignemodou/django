@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html' %} {% load static %} {% block content %}
+<ul>
+    {% for cour in cours %}
+    <li>{{ cour.title}}</li>
+    <img src="{{ cour.image.url }}">
+    <li>{{ cour.body }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
